@@ -1,0 +1,38 @@
+{
+    "optionsSettings":{
+        "message":"Settings"
+    }
+    ,"optionsShare":{
+        "message":"Share"
+    }
+    ,"optionsNum":{
+        "message":"Show badge number"
+    }
+    ,"optionsShortcut":{
+        "message":"Enable shortcut"
+    }
+    ,"success":{
+        "message":"Add Successfully"
+    }
+    ,"fail":{
+        "message":"Cannot Add This Tab"
+    }
+    ,"saveTab":{
+        "message":"Save Tab To Tabby"
+    }
+    ,"saveLink":{
+        "message":"Save Link To Tabby"
+    }
+    ,"desc":{
+        "message":"Too many tabs? Tabby helps you saving energy, quickly cached, shortcut and sync are supported."
+    }
+    ,"optionsAbout":{
+        "message":"Usage"
+    }
+    ,"optionsRight":{
+        "message":"Right click to start"
+    }
+    ,"optionsSync":{
+        "message":"Auto sync between devices"
+    }
+}

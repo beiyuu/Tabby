@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tabby Options</title>
+    <link rel="stylesheet" href="/css/tabby.css" />
+    <script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+</head>
+<body class="options">
+    <div id="content">
+        <div id="hd">Tabby</div>
+        <div id="bd">
+            <div class="options-section">
+                <h2 id="optionsSettings"></h2>
+                <div class="option-item">
+                    <label for="switch-num"><input id="switch-num" name="" type="checkbox" /><span id="optionsNum"></span></label>
+                </div>
+                <div class="option-item">
+                    <label for="switch-shortcut"><input id="switch-shortcut" name="" type="checkbox" /><span id="optionsShortcut"></span></label>
+                    <input id="shortcut-input" type="text" class="hide"/>
+                </div>
+            </div>
+
+            <div class="options-section">
+                <h2 id="optionsAbout"></h2>
+                <div class="option-item" id="optionsRight">
+                </div>
+                <div class="option-item" id="optionsSync">
+                </div>
+            </div>
+
+            <div class="options-section">
+                <h2 id="optionsShare"></h2>
+            </div>
+
+            <div class="options-donate">
+                <form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_xclick">
+                    <input type="hidden" name="business" value="dewreg@gmail.com">
+                    <input type="hidden" name="item_name" value="Tabby Donation">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="image" src="assets/btn-donate.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+                </form>
+            </div>
+        </div>
+        <div class="author">
+            <a href="http://beiyuu.com/?tabby" target="_blank">@BeiYuu</a>
+        </div>
+    </div>
+    <script src="js/shortcut.js" type="text/javascript"></script>
+    <script src="js/options.js" type="text/javascript"></script>
+</body>
+</html>
