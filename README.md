@@ -1,15 +1,5 @@
-#Notty Notes
+#Tabby
 
-##Usage
+Too many tabs? Tabby helps you saving energy, quickly cached, shortcut and sync are supported.
 
-* Double click on the background to add new notes.
-
-* Click the note title to change it and set the single note's background.
-
-* Click the lock icon to prevent the note from changing and deleting.
-
-Download it here：[Notty Notes](https://chrome.google.com/webstore/detail/ggbmjahbkbhakkfgjiggdclpmmpmhajn)
-
-My Blog：[BeiYuu](http://beiyuu.com)
-
-
+https://chrome.google.com/webstore/detail/tabby/pifnjkdglcfkfpdjdolfacpfdlgpdkhp/details?hl=zh-CN
