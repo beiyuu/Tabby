@@ -53,4 +53,8 @@
             $('#switch-num').prop('checked', true)
         }
     });
+
+    $('.share img').hover(function(e){
+        $(this).toggleClass('hover');
+    })
 })();

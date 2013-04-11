@@ -28,7 +28,7 @@ body{ margin:3px; }
 #hd {margin:30px auto;text-align:center;font-size:40px;}
 #bd {background:#fff;border:1px solid #cacaca;border-radius:8px;padding:30px 45px;}
 
-.options-section {margin-bottom:50px;padding-left:20px}
+.options-section {margin-bottom:40px;padding-left:20px}
 .options-donate {text-align:center;}
 #shortcut-input {
     margin-left:20px;
@@ -44,6 +44,14 @@ body{ margin:3px; }
 .author{font-size:12px;text-align:right;margin-top:8px;}
 .author a{text-decoration:none;color:#666;}
 
-.options-section h2{font-size:20px;color:#111;border-bottom:1px solid #ccc;padding-bottom:8px;margin-left:-20px;font-weight:bold;}
-.option-item {margin-bottom:25px;-webkit-user-select:none;font-size:18px;color:#444;height:25px;}
+.options-section h2{font-size:18px;color:#111;border-bottom:1px solid #ccc;padding-bottom:8px;margin-left:-20px;font-weight:bold;}
+.option-item {margin-bottom:18px;-webkit-user-select:none;font-size:14px;color:#444;height:25px;}
 .option-item input[type=checkbox] {height:20px;}
+
+.share {overflow:hidden;text-align:center;padding-left:0;}
+.share li{float:left;list-style:none;width:135px;}
+.share li img{width:60px;-webkit-filter: grayscale(100%);}
+.share li .hover{-webkit-filter: none;}
+
+.copyright {float:right;font-size:12px;color:#555;margin-top:6px;}
+.copyright a {color:#555;text-decoration:none;}
