@@ -1,6 +1,6 @@
 {
     "name": "Tabby"
-    ,"version":"1.5"
+    ,"version":"1.8"
     ,"manifest_version":2
     ,"description":"__MSG_desc__"
     ,"browser_action": {
@@ -27,7 +27,6 @@
     ,"options_page": "options.html"
     ,"permissions": [
         "storage"
-        ,"background"
         ,"bookmarks"
         ,"contextMenus"
         ,"tabs"
@@ -36,4 +35,5 @@
         ,"https://*/"
         ,"chrome://favicon/"
     ]
+    ,"web_accessible_resources": ["assets/48.png"]
 }

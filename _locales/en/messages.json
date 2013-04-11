@@ -15,7 +15,7 @@
         "message":"Add Successfully"
     }
     ,"fail":{
-        "message":"Cannot Add This Tab"
+        "message":"Cannot Add This Page"
     }
     ,"saveTab":{
         "message":"Save Tab To Tabby"

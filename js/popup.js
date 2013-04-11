@@ -38,7 +38,7 @@ $(function(){
             var html = '';
             var tmpl = '<li data-url="{{=url}}" data-id="{{=id}}" title="{{=title}}">\
                         <span class="img">\
-                        <img src="chrome://favicon/{{=url}}" />\
+                        <img src="chrome://favicon/{{=favurl}}" />\
                         </span>\
                         <span>{{=title}}</span>\
                         </li>';
@@ -48,7 +48,9 @@ $(function(){
 
             if(liBookmarks.length){
                 $.each(liBookmarks,function(index,item){
+                    var favurl = item.url.match(/\S*?\/\/\S*?\//)[0] || item.url;
                     html += tmpl.replace(/{{=url}}/g,item.url)
+                                .replace('{{=favurl}}',favurl)
                                 .replace('{{=id}}',item.id)
                                 .replace(/{{=title}}/g,escape(item.title));
                 });

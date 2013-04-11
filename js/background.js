@@ -23,7 +23,7 @@ $(function(){
         chrome.extension.sendMessage({
             type:'updateBadge'
         });
-        displayMsg(chrome.i18n.getMessage('success'));
+        displayMsg();
     }
 
     function saveTab(info,tab){
@@ -31,25 +31,33 @@ $(function(){
             saveBookmark(tab.title,tab.url);
             chrome.tabs.remove(tab.id)
         }else{
-            displayMsg(chrome.i18n.getMessage('fail'));
+            displayMsg('fail');
         }
     }
 
     function saveLink(info,tab){
         var url = info.linkUrl;
-        var title = info.selectionText;
+        var title = info.selectionText || info.linkUrl;
+
+        chrome.extension.sendMessage({type: "getLink",url:info.linkUrl});
 
         if(!url || url=='#'){
-            displayMsg('Cannot Add This Link')
+            displayMsg('fail');
         }else{
             saveBookmark(title,url);
         }
     }
 
-    function displayMsg(text,more){
-        var more = more || '';
-        var box = webkitNotifications.createNotification('assets/48.png', text, more);
+    function displayMsg(text){
+        var box = webkitNotifications.createHTMLNotification('notification.html')
+        if(text == 'fail'){
+            box = webkitNotifications.createHTMLNotification('notification_fail.html')
+        }
+
         box.show();
+        setTimeout(function(){
+            box.cancel()
+        },2500)
     }
 
     function updateBadge(){
@@ -69,7 +77,7 @@ $(function(){
     var init = new initID(initContext)
     init.init();
 
-    chrome.extension.onMessage.addListener(function(msg){
+    chrome.extension.onMessage.addListener(function(msg,sender,sendResponse){
         if(msg.type == 'updateBadge'){
             updateBadge();
         }
@@ -78,6 +86,10 @@ $(function(){
             chrome.tabs.getSelected(null, function(tab) {
                 saveTab('',tab)
             })
+        }
+
+        if(msg.type == "getLink"){
+            sendResponse({url:msg.url});
         }
     });
 
