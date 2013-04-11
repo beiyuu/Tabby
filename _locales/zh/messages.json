@@ -35,4 +35,7 @@
     ,"optionsSync":{
         "message":"自动多设备同步"
     }
+    ,"right":{
+        "message":"网页上右键添加"
+    }
 }

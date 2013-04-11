@@ -35,4 +35,7 @@
     ,"optionsSync":{
         "message":"Auto sync between devices"
     }
+    ,"right":{
+        "message":"Right Click To Add"
+    }
 }

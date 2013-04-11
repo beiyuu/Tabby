@@ -53,7 +53,8 @@ $(function(){
                                 .replace(/{{=title}}/g,escape(item.title));
                 });
             }else{
-                html = '暂时没有'
+                var empty = chrome.i18n.getMessage('right');
+                $('body').html('<div class="empty"><img src="assets/128.png" width="30"/><br><br>' + empty +'</div>');
             }
 
             $('#tab-container').html(html)
