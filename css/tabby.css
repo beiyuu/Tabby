@@ -45,7 +45,8 @@ body{ margin:3px; }
 .author a{text-decoration:none;color:#666;}
 
 .options-section h2{font-size:18px;color:#111;border-bottom:1px solid #ccc;padding-bottom:8px;margin-left:-20px;font-weight:bold;}
-.option-item {margin-bottom:10px;-webkit-user-select:none;font-size:14px;color:#444;height:25px;}
+.option-item {margin-bottom:10px;-webkit-user-select:none;font-size:14px;color:#444;height:20px;}
+.option-shortcut {line-height:35px;}
 
 .share {overflow:hidden;text-align:center;padding-left:0;}
 .share li{float:left;list-style:none;width:135px;}
