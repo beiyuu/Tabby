@@ -1,19 +1,17 @@
 {
     "name": "Tabby"
-    ,"version":"1.2"
+    ,"version":"1.3"
     ,"manifest_version":2
     ,"description":"__MSG_desc__"
     ,"browser_action": {
-        "default_icon":"assets/24.png"
+        "default_icon":"assets/16.png"
         ,"default_title":"Tabby"
         ,"default_popup":"popup.html"
     }
     ,"icons":{
-        "16":"assets/24.png"
-        ,"32":"assets/32.png"
+        "16":"assets/16.png"
         ,"48":"assets/48.png"
         ,"128":"assets/128.png"
-        ,"256":"assets/256.png"
     }
 
     ,"background": {
