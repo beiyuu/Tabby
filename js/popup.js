@@ -40,7 +40,7 @@ $(function(){
                         <span class="img">\
                         <img src="chrome://favicon/{{=favurl}}" />\
                         </span>\
-                        <span>{{=title}}</span>\
+                        <span class="popup-title">{{=title}}</span>\
                         </li>';
 
             var liBookmarks = [];

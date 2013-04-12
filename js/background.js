@@ -37,10 +37,9 @@ $(function(){
 
     function saveLink(info,tab){
         var url = info.linkUrl;
-        var title = info.selectionText || info.linkUrl;
+        var title = $.trim(info.selectionText) || url;
 
-        chrome.extension.sendMessage({type: "getLink",url:info.linkUrl});
-
+        //chrome.extension.sendMessage({type: "getLink",url:info.linkUrl});
         if(!url || url=='#'){
             displayMsg('fail');
         }else{
@@ -89,7 +88,7 @@ $(function(){
         }
 
         if(msg.type == "getLink"){
-            sendResponse({url:msg.url});
+            //sendResponse({url:msg.url});
         }
     });
 

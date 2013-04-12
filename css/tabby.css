@@ -20,7 +20,8 @@ body{ margin:3px; }
     -webkit-transition:all 0.2s ease-in-out;
 }
 #tab-container li:hover{ background:#eee; }
-#tab-container li .img{ margin-right:5px; float:left; padding-top:2px; }
+#tab-container li .img{ margin-right:8px; float:left; padding-top:2px; }
+#tab-container li .popup-title{display:inline-block;width:230px;}
 
 /*options pages*/
 .options {background-color:#ECECEC;}
