@@ -50,7 +50,7 @@ $(function(){
                 $.each(liBookmarks,function(index,item){
                     var favurl = item.url.match(/\S*?\/\/\S*?\//)[0] || item.url;
                     html += tmpl.replace(/{{=url}}/g,item.url)
-                                .replace('{{=favurl}}',favurl)
+                                .replace('{{=favurl}}',item.url)
                                 .replace('{{=id}}',item.id)
                                 .replace(/{{=title}}/g,escape(item.title));
                 });
