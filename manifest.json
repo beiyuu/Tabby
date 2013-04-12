@@ -1,6 +1,6 @@
 {
     "name": "Tabby"
-    ,"version":"2.0"
+    ,"version":"2.1"
     ,"manifest_version":2
     ,"description":"__MSG_desc__"
     ,"browser_action": {
